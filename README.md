@@ -2,7 +2,7 @@
 
 Test state management in todo list
 
-### Instructor Angela Yu by Udemy
+Instructor Angela Yu by Udemy
 
 ## Getting Started
 
