@@ -11,13 +11,12 @@ class TaskTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(
-        'This is task',
+        taskTitle,
         style: TextStyle(
           decoration: isChecked ? TextDecoration.lineThrough : null,
         ),
       ),
       trailing: Checkbox(
-//        onChanged: toggleCheckboxState,
         activeColor: Colors.lightBlueAccent,
         value: isChecked,
         onChanged: checkboxCallback,
