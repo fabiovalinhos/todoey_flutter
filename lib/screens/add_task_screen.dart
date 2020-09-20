@@ -7,7 +7,7 @@ class AddTaskScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String newTasktTitle;
+    String newTaskTitle;
 
     return Container(
       color: Color(0xff757575),
@@ -33,7 +33,7 @@ class AddTaskScreen extends StatelessWidget {
             ),
             TextField(
               onChanged: (newText) {
-                newTasktTitle = newText;
+                newTaskTitle = newText;
               },
               autofocus: true,
               textAlign: TextAlign.center,
@@ -44,11 +44,13 @@ class AddTaskScreen extends StatelessWidget {
             FlatButton(
               child: Text(
                 'Add',
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
               color: Colors.lightBlueAccent,
               onPressed: () {
-                addTaskCallback(newTasktTitle);
+                addTaskCallback(newTaskTitle);
               },
             ),
           ],
